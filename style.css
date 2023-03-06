@@ -1,0 +1,407 @@
+
+body, html{min-width: 1100px;
+            min-height: 100vh;
+}
+
+.search{width:200px;
+        height: 50px;
+        background-color: skyblue;
+        border-radius: 10px;
+}
+
+.search-container{text-align: center;
+                  margin-top: 50px;
+                  margin-bottom: 50px;
+
+}
+.date,
+.character-length,
+.search-btn,
+.search-container,
+.tweet-comment,
+strong,
+.address2,
+.verified-logo2,
+.profile-h4,
+.tweet-tabs,h2{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+.content-column{margin-left: 25% ;
+                margin-right: 25%;
+                border: 1px solid lightgray;
+               
+}
+
+.search-btn{width:100px;
+            margin-left:5px;
+            border-radius: 20px;
+            border: none;
+            height: 30px;
+            color: white;
+            background-color:skyblue;
+}
+#search{height: 30px;
+        border-radius: 10px;
+        border: 1px solid  lightgrey;
+}
+
+.arrow{ width: 20px;}
+
+.header{display: flex;
+        line-height: 0;
+    align-items: center;
+        text-align: left;
+        margin-left: 30px;
+
+
+}
+.error-handling{color:red;
+                font:italic;
+                font-size: 12px;
+}
+.user-header-title{  margin-left: 50px;
+
+}
+.verified-logo{width:22px;
+               margin-left: 5px
+}
+
+.profile-photo{border-radius: 100%;
+                 border: 6px solid white;
+                 width:100px;
+                 height: 100px;
+                
+                 margin-left:20px;
+                 position: relative;
+                 bottom: 22%
+    ;}
+
+.profile-block{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               color:lightslategray;
+               position: relative;
+               bottom: 0px;
+            }
+                
+.profile-h2{margin:0 25px;
+            color:black
+           }
+
+.followers{margin-left: 25px;
+               
+}
+.color-change{color:black;
+    
+}
+
+   .margin-direction,.joined{margin-left: 15px;
+}
+
+
+
+
+
+.calendar{width: 20px;
+          height: 20px;
+          border-radius: 5px 5px 2px 2px ;
+          background-color: blue;
+          background: linear-gradient(
+            to bottom,
+            grey 20%,
+            grey 20%,                                                                 
+            white 20%,
+            white 100%
+        );
+          border: 2px solid 
+
+        ;
+
+}
+
+
+.date-container{display: flex;
+                align-items: center;
+                margin-left: 25px;
+            }
+
+
+
+
+
+.btn{color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    background-color:rgb(188, 178, 247);
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    width:130px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+
+.profile-container{display: flex;
+                   justify-content: space-between;      
+}
+
+
+
+
+
+.tweet-tabs{display:flex ;
+    justify-content:space-around;
+    align-items:center;
+    color:lightslategray;
+    height: 50px;
+    
+
+
+   
+    
+    
+}
+.high-light-container{display:flex;
+                      margin:30px;
+                      
+}
+
+.high-lighter{border-bottom: 3px solid skyblue;
+
+height:45px;
+padding:20px ;
+
+
+
+}
+
+.tab-high-lighter{color:skyblue}
+
+
+.tweet{
+        display:flex;
+        flex-direction: row;
+        align-items:center ;
+        height: 100px;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top: 1px solid lightgrey;
+        margin-top: 20px;
+    
+}
+    
+
+.tweet-inner-container-2,.tweet-inner-container-1{
+width:20%;
+height: 97px;
+
+
+
+
+}
+
+.tweet-inner-container-2{
+    width:80%;
+    height: 98px;
+    margin:2px ;
+    
+    
+    }
+
+
+.tweet-inner-container-2{display: flex;
+                         flex-direction: column;
+                         align-items: center;
+                         
+                        
+
+}
+.tweet-inner-container-b,.tweet-inner-container-a{width:100%;
+    height: 98px;
+    margin:2px ;
+    background-color: white;
+
+
+}
+
+.tweet-inner-container-a{display:flex;
+                  
+                         flex-direction: row;
+               
+             
+                        
+}                         
+.tweet-inner-container-a-1{
+                            width: 80%;
+                          
+                            
+} 
+
+.date{font-size: 14px;
+       color: black;
+       display: inline;
+       margin-left: 5px;
+       color: gray;
+
+}
+
+
+.tweet-inner-container-a-2{
+                            margin: 2px;
+                            width:10%;
+                            
+                            
+     
+}
+
+
+
+.tweet-inner-container-b{display: flex;
+                         
+                         
+                        
+
+}
+
+.tweet-inner-container-b-1,
+ .tweet-inner-container-b-2,
+ .tweet-inner-container-b-3,
+ .tweet-inner-container-b-4,
+ .tweet-inner-container-b-5
+ 
+ {display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    
+                             width:25%;
+                            
+                             margin: 2px;
+}
+
+.tweet-profile-img{width:60%;
+                   height: 80%;
+                   border-radius: 100%;
+                   margin-top: 10px;
+
+
+}
+.tweet-inner-container-1{display: flex;
+                         justify-content: center;
+                         
+                         
+}
+
+.tweet-verfied-logo{width:20px;
+                   position: relative;
+                    top: 4px;
+
+
+}
+
+.tweet-comment{line-height: 0;
+margin-top: 10px;}
+
+
+.circle-container{display: flex;
+                  flex-direction: row;
+                 justify-content: center;
+                 margin-top: 10px;
+}
+
+.circle{width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background-color: grey;
+         margin-right: 3px;
+}
+
+.icon{width: 20px;
+      margin:  5px 0 2px  ;
+
+}
+
+ .view-1{width:2px;
+         height:10px;
+         margin-left: 10px;
+         margin-top: 8px;
+         background-color: black;
+} 
+
+.tweet-inner-container-b-3{display: flex;
+                           justify-content: left;
+                          
+
+}
+
+.view-2{width:2px;
+    height:20px;
+    margin-left: 2px;
+   
+    background-color: black;
+    
+} 
+
+.view-3{width:2px;
+    height:10px;
+    margin-left: 2px;
+    margin-top: 8px;
+    background-color: black;
+}   
+
+.view-4{width:2px;
+    height:20px;
+    margin-left: 2px;
+   
+    background-color: black;
+    
+} 
+
+.icon-numbers{ margin-left: 5px;}
+
+.icon-numbers{margin-top:3px}
+
+.address{margin-left: 25px;}
+.icon-numbers,.address-2{color: gray;
+           font-weight: 600;
+}
+
+.num{padding-top: 10px;}
+
+.tweet-comment{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               font-weight: 530;
+               color: black;
+}
+
+.add-comment{width:100%;
+             height:200px;
+             background-color: white;
+             position: relative;
+             bottom:0px;
+             box-shadow: -2px 1px 20px 2px lightblue;
+             text-align: center;
+             z-index: 3;
+
+}
+
+
+#text-area{width: 80%;
+           height: 50%;
+           margin-top: 5%;
+           border-color: lightgrey;
+
+}
+.button-container{text-align: right;
+                  margin-top: 10px;
+                  margin-right: 50px;
+}
+
+.add-comment{display: none;}
+
+.info-bottom{display:flex;
+             justify-content: space-between;
+}
+
+.character-length{margin-left:50px;
+                  color: lightgray;
+}
