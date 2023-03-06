@@ -56,7 +56,7 @@ var searchButton = document.querySelector('.search-btn'); // searching user name
 /////////////////////////////////////////mainbody/////////////////////////
 
 search();
-
+cutomize();
  // function call of tweet  
 //create to add tweets
 
@@ -78,7 +78,7 @@ for(var i =0; i< users[u].tweet1.length;i++){
 ////////////////////////////////////////////////mainbody///////////////////////      
 
 function search(){
-
+  
 userIdNumber = u;
   searchButton.addEventListener('click',function(){
   
@@ -88,7 +88,7 @@ userIdNumber = u;
 
     //Static
 
-
+//<img class = "cover-photo" src = ${users[u].coverPhoto} >
 
    for( u in users){
 
@@ -107,19 +107,21 @@ errorHandling.style.cssText="display:none;"
                        <p>${users[u].tweets}</p></div>`
   
   var coverPhoto = document.querySelector('.cover-photo');
-    coverPhoto.innerHTML = `<img src = ${users[u].coverPhoto} width ="100%" height="200px">`;
+    coverPhoto.innerHTML = `<div class ="cover-photo-container"></div>`;
   
-  
+  coverPhoto.style.cssText= `background-image:url(${users[u].coverPhoto}); background-repeat:repeat;`
   
   var  profileDetails = document.querySelector('.profile-details');
      profileDetails.innerHTML =`<div class = "profile-container">
                                 <div class = "profile-block"><img src = ${users[u].userPhoto} class ="profile-photo"></img>
                                 <h2 class ="profile-h2">${users[u].userName}<span><img src ="verified logo.png" class ="verified-logo"></img></span></h2>
                                 <p class="address">${users[u].address}</p>
+                                
+
+
+
+
                                <div class = "date-container"> <div class = "calendar">
-                               
-                             
-                               
                                </div>
                                <p class= "joined">Joined ${users[u].joinedDate}</p></div>
                                 <p class ="followers"><span class = "color-change">${users[u].following}</span>  
@@ -211,8 +213,17 @@ var coverPhoto = document.querySelector('.cover-photo');
 var  profileDetails = document.querySelector('.profile-details');
    profileDetails.innerHTML =`<div class = "profile-container">
                               <div class = "profile-block"><img src = ${users[u].userPhoto} class ="profile-photo"></img>
-                              <h2 class ="profile-h2">${users[u].userName}<span><img src ="verified logo.png" class ="verified-logo"></img></span></h2>
-                              <p class="address">${users[u].address}</p>
+                            <div class ="button-user-name"> <div> <h2 class ="profile-h2">${users[u].userName}<span><img src ="verified logo.png" class ="verified-logo"></img></span></h2></div>
+                            <div class ="customization">
+                               
+                           <button class="button-customizer">Customize</button>
+                            
+                            </div>
+                            </div>
+                            <p class="address">${users[u].address}</p>
+
+
+
                              <div class = "date-container"> <div class = "calendar">
                              
                            
@@ -411,4 +422,35 @@ function removeElementTweets(){
   }     
 
 
+}
+
+
+
+
+
+function cutomize() {
+
+  var cutomizeBtn = document.querySelector('.button-customizer')
+ 
+
+cutomizeBtn.addEventListener('click', function(){
+
+ console.log("a")
+var totalBody = document.querySelector('.total-body');
+var tweets=  document.querySelectorAll('.tweets')
+
+var b = document.querySelectorAll('.tweet-inner-container-b')
+var a = document.querySelectorAll('.tweet-inner-container-a')
+
+var randomNum= Math.floor(Math.random() * 254);
+var randomNumA= Math.floor(Math.random() * 254);
+var randomNumB= Math.floor(Math.random() * 254);
+totalBody.style.cssText= `background-color:rgb(${randomNumA},${randomNumB},${randomNum})`;
+tweets.style.cssText=` background-color:rgb(${randomNum},${randomNumA},${randomNumB})`;
+
+a.style.cssText="box-shadow: 10px 10px 5px lightblue;"
+b.style.cssText="box-shadow: 10px 10px 5px lightblue;"
+
+})
+  
 }
