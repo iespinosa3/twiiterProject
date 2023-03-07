@@ -78,7 +78,7 @@ for(var i =0; i< users[u].tweet1.length;i++){
 ////////////////////////////////////////////////mainbody///////////////////////      
 
 function search(){
-  
+
 userIdNumber = u;
   searchButton.addEventListener('click',function(){
   
@@ -107,9 +107,9 @@ errorHandling.style.cssText="display:none;"
                        <p>${users[u].tweets}</p></div>`
   
   var coverPhoto = document.querySelector('.cover-photo');
-    coverPhoto.innerHTML = `<div class ="cover-photo-container"></div>`;
+    coverPhoto.innerHTML = `<div class ="cover-photo-container"><img src =${users[u].coverPhoto}></img></div>`;
   
-  coverPhoto.style.cssText= `background-image:url(${users[u].coverPhoto}); background-repeat:repeat;`
+  
   
   var  profileDetails = document.querySelector('.profile-details');
      profileDetails.innerHTML =`<div class = "profile-container">
@@ -446,10 +446,7 @@ var randomNum= Math.floor(Math.random() * 254);
 var randomNumA= Math.floor(Math.random() * 254);
 var randomNumB= Math.floor(Math.random() * 254);
 totalBody.style.cssText= `background-color:rgb(${randomNumA},${randomNumB},${randomNum})`;
-tweets.style.cssText=` background-color:rgb(${randomNum},${randomNumA},${randomNumB})`;
 
-a.style.cssText="box-shadow: 10px 10px 5px lightblue;"
-b.style.cssText="box-shadow: 10px 10px 5px lightblue;"
 
 })
   
